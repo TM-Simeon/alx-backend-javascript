@@ -1,0 +1,12 @@
+{
+  "name": "0x00-es6_basic",
+  "version": "1.0.0",
+  "description": "ES6 basic",
+  "main": "0-main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
