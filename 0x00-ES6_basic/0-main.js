@@ -36,6 +36,16 @@
 // import getBudgetForCurrentYear from "./8-getBudgetCurrentYear.js";
 
 // console.log(getBudgetForCurrentYear(2100, 5200, 1090));
-import appendToEachArrayValue from './10-loops.js';
+// import appendToEachArrayValue from './10-loops.js';
 
-console.log(appendToEachArrayValue(['appended', 'fixed', 'displayed'], 'correctly-'));
+// console.log(appendToEachArrayValue(['appended', 'fixed', 'displayed'], 'correctly-'));
+
+// import getFullBudgetObject from './9-getFullBudget.js';
+
+// const fullBudget = getFullBudgetObject(20, 50, 10);
+
+// console.log(fullBudget.getIncomeInDollars(fullBudget.income));
+// console.log(fullBudget.getIncomeInEuros(fullBudget.income));
+import createEmployeesObject from './11-createEmployeesObject.js';
+
+console.log(createEmployeesObject("Software", [ "Bob", "Sylvie" ]));
