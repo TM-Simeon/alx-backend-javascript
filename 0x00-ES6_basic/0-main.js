@@ -33,6 +33,9 @@
 // import getBudgetObject from './7-getBudgetObject.js'
 
 // console.log(getBudgetObject(400, 700, 900));
-import getBudgetForCurrentYear from "./8-getBudgetCurrentYear.js";
+// import getBudgetForCurrentYear from "./8-getBudgetCurrentYear.js";
 
-console.log(getBudgetForCurrentYear(2100, 5200, 1090));
+// console.log(getBudgetForCurrentYear(2100, 5200, 1090));
+import appendToEachArrayValue from './10-loops.js';
+
+console.log(appendToEachArrayValue(['appended', 'fixed', 'displayed'], 'correctly-'));
