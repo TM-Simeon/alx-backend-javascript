@@ -1,0 +1,12 @@
+{
+  "name": "0x01-es6_promise",
+  "version": "1.0.0",
+  "description": "a readme for 0x01 es6",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
