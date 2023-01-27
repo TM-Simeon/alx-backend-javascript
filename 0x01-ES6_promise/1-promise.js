@@ -6,7 +6,11 @@ export default function getFullResponseFromAPI(success) {
         body: 'Success',
       });
     } else {
-      reject(new Error('The fake API is not working currently'));
+      reject(new Error('The fake API is not working currently'))
     }
   });
 }
+
+process.on('unhandledRejection', function(err) {
+    // console.log(err);
+});
