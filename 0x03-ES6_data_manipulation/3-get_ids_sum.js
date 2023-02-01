@@ -1,11 +1,19 @@
-import getListStudentsIds from "./1-get_list_student_ids.js";
-
-export default function getStudentIdsSum(list){
-    var myList = getListStudentsIds(list)
-    // console.log(myList)
-    const sum =myList.reduce((initial, elements)=> {
-        return initial + elements;
-    }, 0)
-
-    return sum;
+/**
+ * Retrieves the sum of ids of a list of students.
+ * @param {{
+ *   id: Number,
+ *   firstName: String,
+ *   location: String
+ * }[]} students - The list of students.
+ * @author Bezaleel Olakunori <https://github.com/B3zaleel>
+ * @returns {Number}
+ */
+export default function getStudentIdsSum(students) {
+  if (students instanceof Array) {
+    return students.reduce(
+      (prevStudent, curStudent) => prevStudent.id || prevStudent + curStudent.id,
+      0,
+    );
+  }
+  return 0;
 }

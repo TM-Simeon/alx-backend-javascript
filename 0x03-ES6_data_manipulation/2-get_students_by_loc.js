@@ -1,15 +1,17 @@
-export default function getStudentsByLocation(array, location){
-    const mylocation = location
-    if (Array.isArray(array)){
-        const myarray = array.filter(location)
-
-        function location(array){
-            if (array["location"] == mylocation)
-            return array
-        }
-
-        return myarray
-    }
-    else
-        return []
+/**
+ * Retrieves students in a given location.
+ * @param {{
+ *   id: Number,
+ *   firstName: String,
+ *   location: String
+ * }[]} students - The list of students.
+ * @param {String} city - The location.
+ * @author Bezaleel Olakunori <https://github.com/B3zaleel>
+ * @returns
+ */
+export default function getStudentsByLocation(students, city) {
+  if (students instanceof Array) {
+    return students.filter((student) => student.location === city);
+  }
+  return [];
 }
